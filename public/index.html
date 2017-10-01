@@ -7,7 +7,10 @@
     <script src="vendors/angular.min.js"></script>
     <script src="vendors/angular-route.min.js"></script>
     <script src="scripts/client.js"></script>
-    <script src="scripts/controllers/controller.js"></script>
+    <script src="scripts/controllers/main.controller.js"></script>
+    <script src="scripts/controllers/rent.controller.js"></script>
+    <script src="scripts/controllers/buy.controller.js"></script>
+    <script src="scripts/services/service.js"></script>
     <title>Document</title>
 </head>
 <body ng-app="app">
@@ -18,10 +21,10 @@
         <div>
             <ul>
                 <li>
-                    <a href="#!/listing">Properties To Rent</a>
+                    <a href="#!/rent" ng-click="lc.getListings">Properties To Rent</a>
                 </li>
                 <li>
-                    <a href="#!/listing">Properties For Sale</a>
+                    <a href="#!/buy">Properties For Sale</a>
                 </li>
             </ul>
         </div>

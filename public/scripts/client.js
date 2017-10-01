@@ -5,10 +5,13 @@ console.log('app sourced to index');
 app.config(function($routeProvider){
     $routeProvider.when('/', {
         templateUrl: 'views/home.html',
-        controller: 'ListingController as LC'
-    }).when('/listing', {
-        templateUrl: 'views/listingview.html',
-        controller: 'ListingController as LC'
+        controller: 'MainController as mc'
+    }).when('/rent', {
+        templateUrl: 'views/rentview.html',
+        controller: 'RentController as rc'
+    }).when('/buy', {
+        templateUrl: 'views/buyview.html',
+        controller: 'BuyController as bc'
     }).otherwise({
         redirectTo: '/'
     });

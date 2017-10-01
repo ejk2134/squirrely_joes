@@ -1,5 +1,5 @@
-app.controller('ListingController', function(){
+app.controller('MainController', function(){
     var vm = this;
-
+    
     console.log('listing controller');
 })
