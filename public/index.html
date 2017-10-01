@@ -7,13 +7,25 @@
     <script src="vendors/angular.min.js"></script>
     <script src="vendors/angular-route.min.js"></script>
     <script src="scripts/client.js"></script>
+    <script src="scripts/controllers/controller.js"></script>
     <title>Document</title>
 </head>
-<body>
+<body ng-app="app">
     <header>
         <h1>Property Listing Manager</h1>
     </header>
     <main>
+        <div>
+            <ul>
+                <li>
+                    <a href="#!/listing">Properties To Rent</a>
+                </li>
+                <li>
+                    <a href="#!/listing">Properties For Sale</a>
+                </li>
+            </ul>
+        </div>
+
         <ng-view></ng-view>
     </main>
 </body>
