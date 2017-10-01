@@ -1,3 +1,11 @@
 <div>
-    Available properties
+    <ol>
+        <li ng-repeat="listing in rc.rentals.listings" ng-if="listing.rent">
+            <ul>
+                <li><strong>Location:</strong> {{listing.city}}</li>
+                <li><strong>Size:</strong> {{listing.sqft}}</li>
+                <li><strong>Monthly Rent:</strong> {{listing.rent}}</li>
+            </ul>
+        </li>
+    </ol>
 </div>

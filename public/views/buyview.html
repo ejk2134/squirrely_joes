@@ -1,0 +1,11 @@
+<div>
+    <ol>
+        <li ng-repeat="listing in bc.forSale.listings" ng-if="listing.cost">
+            <ul>
+                <li><strong>Location:</strong> {{listing.city}}</li>
+                <li><strong>Size:</strong> {{listing.sqft}}</li>
+                <li><strong>Listed Price:</strong> {{listing.cost}}</li>
+            </ul>
+        </li>
+    </ol>
+</div>
