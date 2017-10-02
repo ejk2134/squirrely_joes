@@ -12,6 +12,9 @@ app.config(function($routeProvider){
     }).when('/buy', {
         templateUrl: 'views/buyview.html',
         controller: 'BuyController as bc'
+    }).when('/add', {
+        templateUrl: 'views/addview.html',
+        controller: 'AddController as ac'
     }).otherwise({
         redirectTo: '/'
     });

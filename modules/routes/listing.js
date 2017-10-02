@@ -21,7 +21,7 @@ router.get('/', function(req, res){
 router.post('/', function(req, res){
     console.log(req.body);
     if (req.body.type === 'rent'){
-        var newListing = {
+        var inputs = {
             rent: req.body.rent,
             sqft: req.body.sqft,
             city: req.body.city

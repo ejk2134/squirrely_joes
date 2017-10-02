@@ -11,4 +11,15 @@ app.service('ListingService', function($http){
             sv.listingData = {listings: response.data};
         })
     }
+
+    sv.addListing = function(addData){
+        $http({
+            method: 'POST',
+            url: 'listing',
+            data: addData
+        }).then(function(response){
+            console.log(response);
+            sv.getListings();
+        })
+    }
 })

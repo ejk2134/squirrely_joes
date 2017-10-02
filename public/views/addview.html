@@ -1,0 +1,14 @@
+<div>
+    <div class="new-inputs">
+        <input type="text" placeholder="City" ng-model="ac.city">
+        <input type="text" placeholder="Square footage" ng-model="ac.sqft">
+        <input type="text" placeholder="Rent/Price" ng-model="ac.price">
+    </div>
+    
+    <md-radio-group ng-model="ac.rentOrBuy">
+        <md-radio-button value="rent">Rental</md-radio-button>
+        <md-radio-button value="buy">For Sale</md-radio-button>
+    </md-radio-group>
+
+    <button ng-click="ac.addListing()">Add Listing</button>
+</div>
