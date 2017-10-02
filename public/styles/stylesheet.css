@@ -1,0 +1,12 @@
+header{
+    width: 100%;
+    background-color: tan;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.box{
+    border: solid;
+    margin: 3px;
+}

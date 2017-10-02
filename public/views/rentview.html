@@ -1,11 +1,9 @@
-<div>
-    <ol>
-        <li ng-repeat="listing in rc.rentals.listings" ng-if="listing.rent">
-            <ul>
-                <li><strong>Location:</strong> {{listing.city}}</li>
-                <li><strong>Size:</strong> {{listing.sqft}}</li>
-                <li><strong>Monthly Rent:</strong> {{listing.rent}}</li>
-            </ul>
-        </li>
-    </ol>
+<div layout-wrap layout="row" layout-xs="column">
+    <div class="box" ng-repeat="listing in rc.rentals.listings" ng-if="listing.rent" flex="30">
+        <ul>
+            <li><strong>Location:</strong> {{listing.city}}</li>
+            <li><strong>Size:</strong> {{listing.sqft}}</li>
+            <li><strong>Monthly Rent(usd):</strong> {{listing.rent}}</li>
+        </ul>
+    </div>
 </div>

@@ -4,18 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="vendors/angular.min.js"></script>
-    <script src="vendors/angular-route.min.js"></script>
+    <!-- angular, angular-route, angular-materials -->
+    <script src="vendors/angular.min.js" charset="utf-8"></script>
+    <script src="vendors/angular-route.min.js" charset="utf-8"></script>
+    <link href="vendors/angular-material.css" rel="stylesheet" type="text/css">
+    <script src="vendors/angular-animate.min.js" charset="utf-8"></script>
+    <script src="vendors/angular-aria.min.js" charset="utf-8"></script>
+    <script src="vendors/angular-messages.min.js" charset="utf-8"></script>
+    <script src="vendors/angular-material.min.js" charset="utf-8"></script>
+    <!-- main client, controllers, service -->
     <script src="scripts/client.js"></script>
     <script src="scripts/controllers/main.controller.js"></script>
     <script src="scripts/controllers/rent.controller.js"></script>
     <script src="scripts/controllers/buy.controller.js"></script>
+    <script src="scripts/controllers/material.controller.js"></script>
     <script src="scripts/services/service.js"></script>
     <title>Document</title>
+    <!-- style -->
+    <link rel="stylesheet" href="styles/stylesheet.css">
 </head>
 <body ng-app="app">
     <header>
-        <h1>Property Listing Manager</h1>
+        <h1>Squirrely Joe's Realty</h1>
     </header>
     <main>
         <div>
@@ -28,7 +38,6 @@
                 </li>
             </ul>
         </div>
-
         <ng-view></ng-view>
     </main>
 </body>
