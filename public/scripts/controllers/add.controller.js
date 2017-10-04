@@ -23,5 +23,9 @@ app.controller('AddController', function(ListingService){
         console.log(newListing);
 
         ListingService.addListing(newListing)
+
+        vm.city = "";
+        vm.sqft = "";
+        vm.price = "";
     }
 })
